@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NossoAmigoSecreto</title>
+    <%= csrf_meta_tags %>
+
+<%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' %>
+<%= javascript_include_tag 'default', 'data-turbolinks-track' %>
+    <%= favicon_link_tag  %>
+  </head>
+
+  <body>
+
+    <header>
+      <%= render "shared/navbar" %>
+    </header>
+
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+
+    <footer>
+      <%= render "shared/footer" %>
+    </footer>
+
+  </body>
+</html>
