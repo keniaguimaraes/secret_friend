@@ -34,13 +34,15 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'wdm', '>= 0.1.0'
+#gem 'wdm', '>= 0.1.0'
 gem 'devise'
 gem 'materialize-sass'
 gem 'material_icons'
 gem 'redis'
 gem 'sidekiq'
 gem 'spring'
+gem 'rb-inotify', github: 'nex3/rb-inotify', platforms: :ruby, require: false
+gem 'wdm', platforms: :mingw, require: false
 
 group :test do
   gem "factory_girl_rails"
